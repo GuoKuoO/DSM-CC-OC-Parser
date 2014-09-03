@@ -23,13 +23,12 @@ typedef struct node_t
 
 typedef struct list_t
 {
-    node_t   head;
+    node_t   *head;
 
-    int32_t  size;
     int32_t  cont;
 }list_t;
 
-list_t *list_create(int32_t size);
+list_t *list_create();
 
 int32_t list_destroy(list_t *list);
 
